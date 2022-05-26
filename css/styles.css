@@ -177,6 +177,22 @@ a {
   color: var(--accent-color);
 }
 
+.nav-list {
+  position: relative;
+}
+
+.home::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
 /* Блок Герой  */
 .block-hero {
   text-align: center;
@@ -275,6 +291,34 @@ a {
 
 .works-list .work-src + .work-src {
   margin-left: 30px;
+}
+
+.work-src {
+  position: relative;
+}
+
+.scroll-works-p {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  color: var(--bg-color);
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.scroll-works-p:hover {
+  opacity: 1;
 }
 
 /*--------------------------------------- Наша команда ----------------------------------------*/
@@ -576,4 +620,66 @@ a {
   color: var(--additional-text-color);
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+.portfolio-hover {
+  position: relative;
+}
+
+.portfolio-hover-p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--bg-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+}
+
+.portfolio-hover-p:hover {
+  opacity: 1;
+}
+
+/* --------------------------МОДАЛЬНЕ ВІКНО--------------------------- */
+
+.modal-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+.modal {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  opacity: 0;
 }
