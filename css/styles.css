@@ -105,6 +105,7 @@ a {
   text-decoration: none;
   font-family: "Raleway";
   color: var(--logo-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-web {
   color: var(--accent-color);
@@ -112,6 +113,7 @@ a {
 .web-logo:hover,
 .web-logo:focus {
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-nav {
@@ -127,6 +129,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -140,6 +143,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   color: var(--additional-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts li + li {
@@ -151,11 +155,13 @@ a {
   height: 14px;
   margin-right: 10px;
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-icon:hover,
 .contact-icon:focus {
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Ховер і фокус всіх кнопок та посилань на сайті */
@@ -171,24 +177,13 @@ a {
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-nav .nav-link.port,
 .page-nav .nav-link.home,
 .page-nav .nav-link.cont {
   color: var(--accent-color);
-}
-
-.page-nav a,
-.contacts a,
-.footer-contact,
-.footer-contacts,
-.portfolio-button,
-.web-logo,
-.commands-link,
-.social-link,
-.partners-link,
-.portfolio-href {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list {
@@ -204,6 +199,7 @@ a {
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2px;
 }
 
@@ -328,12 +324,16 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.scroll-works-p:hover {
+.work-src:hover .scroll-works-p {
   opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--------------------------------------- Наша команда ----------------------------------------*/
@@ -413,6 +413,8 @@ a {
   border-radius: 50%;
   background-color: var(--bg-section-color-color);
   fill: var(--clients-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
@@ -424,11 +426,12 @@ a {
 .commands-link:focus {
   fill: var(--bg-color);
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .commands-icon {
   margin: 0 auto;
-  fill: var(--clients-colorr);
 }
 /* ----------------------------Наші партнери --------------------*/
 .partners-list {
@@ -452,12 +455,16 @@ a {
   fill: var(--clients-color);
   border-radius: 4px;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .partners-link:hover,
 .partners-link:focus {
   border-color: var(--accent-color);
   fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----------------------------------------Підвал -------------------*/
@@ -493,10 +500,12 @@ a {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts.address {
   color: var(--bg-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-item:not(:first-child) {
@@ -540,11 +549,13 @@ a {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -577,6 +588,7 @@ a {
   font-size: 16px;
   line-height: 1.62;
   font-weight: 500;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -585,6 +597,10 @@ a {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------------------Секція портфоліо------------- */
@@ -614,6 +630,7 @@ a {
 .portfolio-href:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-box {
@@ -656,12 +673,17 @@ a {
   line-height: 1.56;
   color: var(--bg-color);
   background-color: rgba(33, 150, 243, 0.9);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-href:hover .portfolio-hover-p {
+.portfolio-href:hover .portfolio-hover-p,
+.portfolio-href:focus .portfolio-hover-p {
   transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------------------МОДАЛЬНЕ ВІКНО--------------------------- */
@@ -674,13 +696,16 @@ a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-box.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-box.is-hidden .modal {
@@ -699,7 +724,9 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close {
