@@ -68,7 +68,7 @@
             для вашего бизнеса
           </h1>
 
-          <button type="button" class="hero-button">
+          <button type="button" class="hero-button" data-modal-open>
             <span class="hero-button-text">Заказать услугу</span>
           </button>
         </div>
@@ -468,13 +468,9 @@
         </div>
       </div>
     </footer>
-    <div class="modal-box">
+    <div class="modal-box is-hidden" data-modal>
       <div class="modal">
-        <div class="close">
-          <svg class="close-icon" width="16" height="16">
-            <use href="./images/close-black.svg"></use>
-          </svg>
-        </div>
+        <button class="button close" data-modal-close></button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
